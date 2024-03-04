@@ -21,7 +21,7 @@
                     <span class="font-fontfamily mt-4 text-[1]">Ma Gallery</span>
                 </div>
                 <div class="flex items-center overflow-hidden">
-                    <a href="/album" class="mr-6 font-bold underline">Album</a>
+                    <a href="/album" class="mr-6 font-bold">Album</a>
                     <a href="/index" class="mr-6 font-bold">Index</a>
                     <form action="{{ route('logout') }}" method="post">
                         @csrf

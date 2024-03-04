@@ -33,6 +33,7 @@ Route::middleware(['auth'])->group(function () {
         return view('index');
     });
 
+
     // Route::get('/detailcomment/{id}', function () {
     //     return view('detailcomment');
     // });
@@ -78,9 +79,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/album', [UserController::class, 'album']);
     Route::get('/album/{id}', [ExploreController::class, 'show'])->name('album.show');
 
-    Route::get('/home', function () {
-        return view('home');
-    });
 
     //changepass
     Route::get('ubahpassword', [ProfileController::class, 'ubahpassword'])->name('ubahpassword');
@@ -124,6 +122,9 @@ Route::middleware('guest')->group(function () {
     //menampilkan hal register
     Route::get('/register', function () {
         return view('register');
+    });
+    Route::get('/home', function () {
+        return view('home');
     });
     //menampilkan hal login
     Route::get('/login', [UserController::class, 'login'])->name('login');

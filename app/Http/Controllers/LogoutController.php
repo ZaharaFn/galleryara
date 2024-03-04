@@ -13,6 +13,6 @@ class LogoutController extends Controller
     {
         Alert::success('success', 'Logout berhasil!');
         Auth::logout();
-        return redirect(RouteServiceProvider::HOME);
+        return redirect('/home');
     }
 }

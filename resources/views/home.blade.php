@@ -23,10 +23,6 @@
                 <div class="flex items-center overflow-hidden">
                     <a href="/login" class="mr-6 font-bold">Login</a>
                     <a href="/register" class="mr-9 font-bold">Register</a>
-                    <div>
-                        <a href="/profil"><img src="/profile/{{ Auth::user()->profile }}" alt=""
-                                class="rounded-full w-10 h-10"></a>
-                    </div>
                 </div>
             </div>
     </nav>

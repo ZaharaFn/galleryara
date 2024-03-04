@@ -31,7 +31,7 @@
                 </div>
                 <div class="flex items-center overflow-hidden">
                     <a href="/index" class="mr-6 underline font-bold">Index</a>
-                    <a href="/home" class="mr-6 font-bold">Home</a>
+
                     <a href="/upload" class="mr-6 font-bold">Create</a>
                     <form action="{{ route('logout') }}" method="post">
                         @csrf
